@@ -1,0 +1,68 @@
+site_name: DataMaker
+site_author: Automators
+repo_url: https://github.com/automators-com/datamaker-core.git
+repo_name: automators-com/datamaker-core
+
+nav:
+  - Home: index.md
+  - Contributing: contributing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/automators-com
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/automators
+
+theme:
+  logo: assets/automators.png
+  favicon: assets/favicon.ico
+  language: en
+  name: material
+  palette:
+    scheme: datamaker
+  font:
+    text: Inter
+  features:
+    - content.code.copy
+    - content.tabs.link
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - content.code.annotate
+    - toc.follow
+    - navigation.path
+    - navigation.top
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_source: false
+
+markdown_extensions:
+  - toc:
+      toc_depth: 2
+      title: On this page
+      permalink: "#"
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true

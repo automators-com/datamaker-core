@@ -1,7 +1,14 @@
+# Project specific ignores
+test.py
+.vscode/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+output/
+tmp/
+datamaker_project/
+*.DS_Store
 
 # C extensions
 *.so
